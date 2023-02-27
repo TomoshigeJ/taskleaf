@@ -65,3 +65,5 @@ gem 'slim-rails', '= 3.5.1'
 gem 'html2slim'
 
 gem 'bootstrap', '~> 4.6'
+
+gem 'rails_autolink'
