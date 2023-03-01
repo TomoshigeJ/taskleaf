@@ -36,6 +36,9 @@ before_action :set_task, only: [:show, :edit, :update, :destroy]
     redirect_to tasks_url, notice: "タスク「#{task.name}」を削除しました。"
   end
 
+  def about
+  end
+
   private
 
   def task_params
