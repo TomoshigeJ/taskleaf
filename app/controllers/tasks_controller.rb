@@ -39,6 +39,11 @@ before_action :set_task, only: [:show, :edit, :update, :destroy]
   def about
   end
 
+  def confirm_new
+    @task = current_user.tasks.new(task_params)
+    render :new unless @task.valid?
+  end
+
   private
 
   def task_params
